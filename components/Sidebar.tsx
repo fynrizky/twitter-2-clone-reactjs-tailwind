@@ -1,20 +1,21 @@
 import React from 'react'
 import { 
-    BellIcon,
-    HashtagIcon,
-    BookmarkIcon,
+  BellIcon,
+  HashtagIcon,
+  BookmarkIcon,
     CollectionIcon,
     DotsCircleHorizontalIcon,
     MailIcon,
     UserIcon,
     HomeIcon
-} from '@heroicons/react/outline';
-import SidebarRow from './SidebarRow';
-
+  } from '@heroicons/react/outline';
+  import SidebarRow from './SidebarRow';
+  
 function Sidebar() {
   return (
-    <div>
-        <img className="h-10 w-10" src="https://links.papareact.com/drq" alt="" />
+    <div className='flex flex-col col-span-2 items-center px-4 
+    md:items-start'>
+        <img className="m-3 h-10 w-10" src="https://links.papareact.com/drq" alt="" />
         <SidebarRow Icon={HomeIcon} title="Home" />
         <SidebarRow Icon={HashtagIcon} title="Explore" />
         <SidebarRow Icon={BellIcon} title="Notifications" />
